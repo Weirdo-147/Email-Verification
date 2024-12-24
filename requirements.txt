@@ -1,0 +1,12 @@
+dj_database_url==2.2.0
+Django==4.2.10
+djangorestframework_simplejwt==5.3.1
+Requests==2.32.3
+
+gunicorn
+python-dotenv
+django-cors-headers
+psycopg2-binary
+six
+whitenoise
+pillow

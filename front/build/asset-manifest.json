@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3578fc2a.css",
+    "main.js": "/static/js/main.f218d2ac.js",
+    "static/js/453.80efc53e.chunk.js": "/static/js/453.80efc53e.chunk.js",
+    "static/media/cherry blossom. [lofi jazzhop chill mix] (online-video-cutter.com).mp4": "/static/media/cherry blossom. [lofi jazzhop chill mix] (online-video-cutter.com).bbf57b416fb682070996.mp4",
+    "static/media/vivid.gif": "/static/media/vivid.d8c2093e81b87522ce09.gif",
+    "static/media/download (12).jpeg": "/static/media/download (12).c1af3fd0edc71429ecc2.jpeg",
+    "static/media/download15.jpeg": "/static/media/download15.be1f6dffd0559df35cb3.jpeg",
+    "static/media/download.jpeg": "/static/media/download.3a79c12fc5d2fb7f7a51.jpeg",
+    "static/media/paper-plane-unscreen.gif": "/static/media/paper-plane-unscreen.d07e5a7465787494fa7e.gif",
+    "index.html": "/index.html",
+    "main.3578fc2a.css.map": "/static/css/main.3578fc2a.css.map",
+    "main.f218d2ac.js.map": "/static/js/main.f218d2ac.js.map",
+    "453.80efc53e.chunk.js.map": "/static/js/453.80efc53e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3578fc2a.css",
+    "static/js/main.f218d2ac.js"
+  ]
+}

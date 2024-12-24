@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Email Verification</title>
+    <meta name="csrf-token" content="{{ csrf_token }}">
+</head>
+<body>
+    <p>Dear {{ user.username }},</p>
+    <p>Thank you for registering. Please click the link below to verify your email:</p>
+    <a href="{{ verification_link }}">Verify Email</a>
+</body>
+</html>

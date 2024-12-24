@@ -1,0 +1,43 @@
+# services:
+#   - type: web
+#     name: email-verification
+#     env: python
+#     buildCommand: |
+#       pip install -r requirements.txt
+#       cd front && npm install && CI=false npm run build && cd ..
+#       python manage.py collectstatic --noinput
+#     startCommand: gunicorn email_ver.wsgi:application --bind 0.0.0.0:$PORT
+#     envVars:
+#       - key: PORT
+#         value: 2374
+#       - key: DJANGO_SECRET_KEY
+#         generateValue: true
+#       - key: SUPABASE_URL
+#         sync: false
+#       - key: SUPABASE_API_KEY
+#         sync: false
+
+services:
+  - type: web
+    name: quantum-auth
+    env: python
+    buildCommand: |
+      pip install -r requirements.txt
+      python manage.py collectstatic --noinput
+    startCommand: gunicorn email_ver.wsgi:application --bind 0.0.0.0:$PORT
+    envVars:
+      - key: PORT
+        value: "2374"
+      - key: DJANGO_SECRET_KEY
+        generateValue: true
+    staticPublishPath: ./staticfiles
+
+  - type: static
+    name: quantum-death
+    env: static
+    buildCommand: cd front && npm install && npm run build
+    staticPublishPath: ./front/build
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
